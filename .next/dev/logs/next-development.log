@@ -1,0 +1,58 @@
+[00:00:12.566] Server  LOG      ✓ Ready in 9.5s
+[00:00:16.262] Server  LOG      ○ Compiling / ...
+[00:00:44.918] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:01:09.914] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:09.915] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <head>
+                          <body
+                            className="font-sans antialiased bg-background text-foreground"
+-                           hix-version="3.1.8"
+-                           hix-id="njggknpmkjapgklcfhaiigafiiebpchm"
+                          >
+                  ...
+
+[00:01:17.086] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:01:17.086] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:01:17.086] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763601278190}
+[00:02:45.670] Server  LOG      ✓ Compiled in 6.8s
+[00:08:54.927] Server  LOG      ✓ Compiled in 2.5s
+[00:09:07.384] Server  LOG      ✓ Compiled in 10.4s
+[00:09:21.348] Server  LOG      ✓ Compiled in 4.4s
+[00:09:41.646] Server  LOG      ✓ Compiled in 12s
+[00:09:47.972] Server  LOG      ✓ Compiled in 3.6s
+[00:11:36.198] Server  LOG      ✓ Compiled in 2.4s
+[00:11:48.730] Server  LOG      ✓ Compiled in 2.9s
+[00:12:00.953] Server  LOG      ✓ Compiled in 3.5s
+[00:13:48.862] Browser LOG     Processing Paystack payment: 2500000
+[00:13:50.338] Browser LOG     Processing Flutterwave payment: 25000
+[00:13:51.526] Browser LOG     Processing Paystack payment: 2500000
